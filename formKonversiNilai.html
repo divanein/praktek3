@@ -1,0 +1,36 @@
+<html>
+<head> 
+	<title>Konversi Nilai Angka ke Nilai Huruf</title>
+</head>
+
+<script language="JavaScript">
+//<!-
+	function test () {
+		var nilaiAngka=document.konversi. T1. value
+		if (nilaiAngka>=0&&nilaiAngka<=40)
+		document.konversi.T2. value="E"
+		else if (nilaiAngka>=41&&nilaiAngka<=55)
+		document.konversi.T2. value="D"
+		else if (nilaiAngka>=56&&nilaiAngka<=60)
+		document.konversi.T2. value="C"
+		else if (nilaiAngka>=61&&nilaiAngka<=65)
+		document.konversi.T2. value="BC"
+		else if (nilaiAngka>=66&&nilaiAngka<=70)
+		document.konversi.T2. value="B"
+		else if (nilaiAngka>=71&&nilaiAngka<=80)
+		document.konversi.T2. value="AB"
+		else if (nilaiAngka>=90&&nilaiAngka<=100)
+		document.konversi.T2. value="A"
+
+	}
+//->
+</script>
+<body>
+<form method="POST" name="konversi">
+
+<p>Nilai Angka <input type="text" name="T1" size="20"> 
+	Nilai Huruf <input type="text" name="T2" size="20"> </p>
+<p><input type="button" value="KONVERSI" name="button1" onclick=test()></p>
+</form>
+</body>
+</html>

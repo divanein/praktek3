@@ -1,0 +1,47 @@
+<html>
+<head> 
+	<title>kalkulator sederhana</title>
+</head>
+
+<script language="JavaScript">
+//<!-
+	function penjumlahan () {
+		var nilai1= parseInt(document.kalkulator. bil1. value)
+		var nilai2=parseInt(document.kalkulator. bil2. value)
+		var totalhtg = (nilai1 + nilai2);
+		document.kalkulator.hasil. value=totalhtg
+	}
+	function pengurangan () {
+		var nilai1= parseInt(document.kalkulator. bil1. value)
+		var nilai2=parseInt(document.kalkulator. bil2. value)
+		var totalhtg = (nilai1 - nilai2);
+		document.kalkulator.hasil. value=totalhtg
+	}
+	function perkalian () {
+		var nilai1= parseInt(document.kalkulator. bil1. value)
+		var nilai2=parseInt(document.kalkulator. bil2. value)
+		var totalhtg = (nilai1 * nilai2);
+		document.kalkulator.hasil. value=totalhtg
+	}
+	function pembagian () {
+		var nilai1= parseInt(document.kalkulator. bil1. value)
+		var nilai2=parseInt(document.kalkulator. bil2. value)
+		var totalhtg = (nilai1 / nilai2);
+		document.kalkulator.hasil. value=totalhtg
+	}
+//->
+</script>
+<body>
+<form method="POST" name="kalkulator">
+
+<p>Bilangan pertama <input type="number" name="bil1" value=0 size="20"> <br> <br>
+	Bilangan Kedua  <input type="number" name="bil2" value=0 size="20"> <br> <br>
+	Hasil <input type="number" name="hasil" value=0 size="20"> </p>
+<p>
+<input type="button" value="+" name="button1" onclick=penjumlahan()>
+<input type="button" value="-" name="button2" onclick=pengurangan()>
+<input type="button" value="x" name="button3" onclick=perkalian()>
+<input type="button" value="/" name="button4" onclick=pembagian()> </p>
+</form>
+</body>
+</html>
